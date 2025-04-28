@@ -45,6 +45,9 @@ jobs:
       - name: Install Ruby Depedencies
         run: bundle
         working-directory: ruby
+
+      - name: Check port availability
+        run: sudo lsof -i :3000 || echo "Port 3000 is available"
       - name: Run Unit Tests
         run: bundle exec rake test
         working-directory: ruby
