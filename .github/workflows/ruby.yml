@@ -45,6 +45,8 @@ jobs:
       - name: Install Ruby Depedencies
         run: bundle
         working-directory: ruby
+      - name: Show Ruby version
+        run: ruby --version
       - name: Run Unit Tests
         run: bundle exec rake test
         working-directory: ruby
