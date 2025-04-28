@@ -45,15 +45,6 @@ jobs:
       - name: Install Ruby Depedencies
         run: bundle
         working-directory: ruby
-      - name: Start Server Offline
-        run: |
-          
-          npm install -g serverless-offline 
-          
-          nohup serverless offline start &
-          
-          sleep 10
-        working-directory: ruby/test/support
       - name: Run Unit Tests
         run: bundle exec rake test
         working-directory: ruby
