@@ -1,3 +1,15 @@
+# # frozen_string_literal: true
+
+# require 'minitest/test_task'
+
+# Minitest::TestTask.create(:test) do |t|
+#   t.libs << 'test'
+#   t.test_globs = ['test/**/*_test.rb']
+# end
+
+# task default: :test
+
+
 # frozen_string_literal: true
 
 require 'minitest/test_task'
@@ -5,6 +17,17 @@ require 'minitest/test_task'
 Minitest::TestTask.create(:test) do |t|
   t.libs << 'test'
   t.test_globs = ['test/**/*_test.rb']
+end
+
+# Create a CI-safe test task that excludes integration tests
+Minitest::TestTask.create(:test_ci) do |t|
+  t.libs << 'test'
+  t.test_globs = ['test/**/*parsing_test.rb']  # Only include parsing tests
+end
+
+namespace :test do
+  desc "Run CI-safe tests (excludes integration tests that require external services)"
+  task ci: :test_ci
 end
 
 task default: :test
