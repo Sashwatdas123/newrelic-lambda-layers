@@ -60,7 +60,7 @@ EXTENSION_DIST_DIR=extensions
 EXTENSION_DIST_ZIP=extension.zip
 EXTENSION_DIST_PREVIEW_FILE=preview-extensions-ggqizro707
 
-EXTENSION_VERSION=2.3.18
+EXTENSION_VERSION=2.3.19
 
 function list_all_regions {
     aws ec2 describe-regions \
@@ -137,6 +137,9 @@ function layer_name_str() {
     "ruby3.3")
       rt_part="Ruby33"
       ;;
+    "ruby3.4")
+      rt_part="Ruby34"
+      ;;
     "dotnet")
       rt_part="Dotnet"
       ;;
@@ -197,6 +200,9 @@ function s3_prefix() {
     "ruby3.3")
       name="nr-ruby3.3"
       ;;
+    "ruby3.4")
+      name="nr-ruby3.4"
+      ;;
     "dotnet")
       name="nr-dotnet"
       ;;
@@ -216,7 +222,7 @@ function agent_name_str() {
         "nodejs18.x"|"nodejs20.x"|"nodejs22.x")
             agent_name="Node"
             ;;
-        "ruby3.2"|"ruby3.3")
+        "ruby3.2"|"ruby3.3"|"ruby3.4")
             agent_name="Ruby"
             ;;
         "java8.al2"|"java11"|"java17"|"java21")
