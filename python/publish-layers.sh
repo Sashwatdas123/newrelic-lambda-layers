@@ -87,44 +87,44 @@ function publish_python_layer {
 
 case "$1" in
     "python3.9")
-        build_python_layer 3.9 arm64
-        publish_python_layer 3.9 arm64
-        publish_docker_ecr $PY39_DIST_ARM64 python3.9 arm64
-        build_python_layer 3.9 x86_64
-        publish_python_layer 3.9 x86_64
-        publish_docker_ecr $PY39_DIST_X86_64 python3.9 x86_64
+        # build_python_layer 3.9 arm64
+        # publish_python_layer 3.9 arm64
+        # publish_docker_ecr $PY39_DIST_ARM64 python3.9 arm64
+        # build_python_layer 3.9 x86_64
+        # publish_python_layer 3.9 x86_64
+        # publish_docker_ecr $PY39_DIST_X86_64 python3.9 x86_64
         ;;
     "python3.10")
-        build_python_layer 3.10 arm64
-        publish_python_layer 3.10 arm64
-        publish_docker_ecr $PY310_DIST_ARM64 python3.10 arm64
-        build_python_layer 3.10 x86_64
-        publish_python_layer 3.10 x86_64
-        publish_docker_ecr $PY310_DIST_X86_64 python3.10 x86_64
+        # build_python_layer 3.10 arm64
+        # publish_python_layer 3.10 arm64
+        # publish_docker_ecr $PY310_DIST_ARM64 python3.10 arm64
+        # build_python_layer 3.10 x86_64
+        # publish_python_layer 3.10 x86_64
+        # publish_docker_ecr $PY310_DIST_X86_64 python3.10 x86_64
         ;;
     "python3.11")
-        build_python_layer 3.11 arm64
-        publish_python_layer 3.11 arm64
-        publish_docker_ecr $PY311_DIST_ARM64 python3.11 arm64
-        build_python_layer 3.11 x86_64
-        publish_python_layer 3.11 x86_64
-        publish_docker_ecr $PY311_DIST_X86_64 python3.11 x86_64
+        # build_python_layer 3.11 arm64
+        # publish_python_layer 3.11 arm64
+        # publish_docker_ecr $PY311_DIST_ARM64 python3.11 arm64
+        # build_python_layer 3.11 x86_64
+        # publish_python_layer 3.11 x86_64
+        # publish_docker_ecr $PY311_DIST_X86_64 python3.11 x86_64
         ;;
     "python3.12")
-        build_python_layer 3.12 arm64
-        publish_python_layer 3.12 arm64
-        publish_docker_ecr $PY312_DIST_ARM64 python3.12 arm64
-        build_python_layer 3.12 x86_64
-        publish_python_layer 3.12 x86_64
-        publish_docker_ecr $PY312_DIST_X86_64 python3.12 x86_64
+        # build_python_layer 3.12 arm64
+        # publish_python_layer 3.12 arm64
+        # publish_docker_ecr $PY312_DIST_ARM64 python3.12 arm64
+        # build_python_layer 3.12 x86_64
+        # publish_python_layer 3.12 x86_64
+        # publish_docker_ecr $PY312_DIST_X86_64 python3.12 x86_64
         ;;
     "python3.13")
-        build_python_layer 3.13 arm64
-        publish_python_layer 3.13 arm64
-        publish_docker_ecr $PY313_DIST_ARM64 python3.13 arm64
-        build_python_layer 3.13 x86_64
-        publish_python_layer 3.13 x86_64
-        publish_docker_ecr $PY313_DIST_X86_64 python3.13 x86_64
+        # build_python_layer 3.13 arm64
+        # publish_python_layer 3.13 arm64
+        # publish_docker_ecr $PY313_DIST_ARM64 python3.13 arm64
+        # build_python_layer 3.13 x86_64
+        # publish_python_layer 3.13 x86_64
+        # publish_docker_ecr $PY313_DIST_X86_64 python3.13 x86_64
         ;;
     "python3.14")
         # build_python_layer 3.14 arm64
