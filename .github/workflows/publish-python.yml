@@ -2,6 +2,8 @@ name: Publish Python Layers
 
 on:
   workflow_dispatch:
+    tags:
+      - v**_python
   push:
     tags:
       - v**_python
